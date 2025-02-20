@@ -57,13 +57,14 @@ class Robot:
                 dtype="float",
             ),
         )
-        return [dg[0, 0], dg[1, 0], dg[2, 0]]
+        dg = [dg[0, 0], dg[1, 0], dg[2, 0]]
+        return np.array([float(d) for d in dg])
 
 
 if __name__ == "__main__":
     l = [3, 2, 1.5]
     g = [0.5, 1.2, 1.8]
-    dg = [1, 2, 3]
+    dg = np.array([1.0, 2.0, 3.0])
     robot = Robot(l)
     forward = robot.forward_vel(g, dg)
     print("Expected: ")

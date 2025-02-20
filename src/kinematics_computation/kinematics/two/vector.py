@@ -2,7 +2,7 @@ from typing import Self, Any
 
 
 class Vector2:
-    def __init__(self, x, y):
+    def __init__(self, x: Any, y: Any):
         self.x = x
         self.y = y
 

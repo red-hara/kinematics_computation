@@ -56,3 +56,10 @@ if __name__ == "__main__":
     sp.pprint(solution.translation.x.diff(t))
     sp.pprint(solution.translation.y.diff(t))
     sp.pprint(solution.rotation.angle.diff(t))
+
+    print()
+
+    print("Difference between solutions")
+    sp.pprint(sp.simplify(solution.translation_vel.x - solution.translation.x.diff(t)))
+    sp.pprint(sp.simplify(solution.translation_vel.y - solution.translation.y.diff(t)))
+    sp.pprint(sp.simplify(solution.rotation_vel - solution.rotation.angle.diff(t)))
