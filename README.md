@@ -24,6 +24,11 @@ where `EXAMPLE` is one of the following:
 - `forward.position_3d_6`
 - `forward.velocity_2d_3`
 - `forward.velocity_3d_3`
+- `forward.acceleration_2d_3`
+- `forward.acceleration_3d_3`
 - `inverse.velocity_2d_3`
 - `inverse.velocity_3d_3`
 - `inverse.velocity_3d_6`
+- `inverse.acceleration_2d_3`
+- `inverse.acceleration_3d_3`
+- `inverse.acceleration_3d_6`
